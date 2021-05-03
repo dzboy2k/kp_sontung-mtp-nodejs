@@ -1,0 +1,49 @@
+<!-- w3school -> bootsrap 3 -> Example -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="../icon/css/font-awesome.css">
+</head>
+
+<body>
+      <div class="container-fluid">
+            <div class="row">
+                  <div class="col-md-8 col-md-push-2"> <!--push: đẩy sang phải-->
+                        
+                        <!-- enctype="multipart/form-data" -> Để upload file -->
+                        <form action="add" method="POST" role="form" enctype="multipart/form-data">
+                              <legend>Upload File</legend>
+                        
+                              <div class="form-group">
+                                    <label for="">Tiêu đề</label>
+                                    <input type="text" class="form-control" id="tieude" name="tieude">
+                              </div>
+                              <div class="form-group">
+                                    <label for="">Mô tả</label>
+                                    <input type="text" class="form-control" id="mota" name="mota">
+                              </div>
+                              <div class="form-group">
+                                    <label for="">Key</label>
+                                    <input type="text" class="form-control" id="key" name="key">
+                              </div>
+                              <div class="form-group">
+                                    <label for="">Ảnh</label>
+                                    <input type="file" class="form-control" id="uploadfile" name="uploadfile">
+                              </div>
+
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        
+                  </div>
+            </div>
+      </div>
+</body>
+
+</html>

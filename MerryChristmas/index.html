@@ -1,0 +1,41 @@
+<!-- Tạo project
+      - Mở cmd:
+            npm init
+            package name: (7-- merrychirstmas) quanlyvideo
+            Is this OK? (yes) yes
+
+            // Cài đặt module
+            npm install express ejs body-parser multer pg
+      
+      - Chạy project
+            node index
+-->
+
+<!-- Dowload PostgreSQL 9.6.1 
+      - Tạo cơ sở dữ liệu:
+            Databases -> Create -> Database...
+      - Tạo bảng 
+            Chọn csdl -> Schemas -> Tables -> Create -> Table... (Column: cột)
+            video
+            id        bigint      not null    primary key
+            tieude    text
+            mota      text
+            key       text
+            image     text
+      - Chèn dữ liệu: Tables -> Chọn bảng -> Query tool 
+            -- key: id của video trên vimeo
+            (2,3)
+            INSERT INTO video (id, tieude, mota, "key", image) VALUES (1, 'chuc mung giang sinh', 'fagfdsgdsgsd', '196277011', '1.jpg')    
+
+            INSERT INTO video (id, tieude, mota, "key", image) VALUES (4, 'dsgdsg', 'fsdfsdg', 'adsffgsdg', '10.jpg')
+            
+            (4)
+            INSERT INTO video (tieude, mota, "key", image) VALUES ('chuc mung giang sinh', 'fagfdsgdsgsd', '196277011', '1.jpg');
+            INSERT INTO video (tieude, mota, "key", image) VALUES ('dsgdsg', 'fsdfsdg', 'adsffgsdg', '10.jpg');
+            INSERT INTO video (tieude, mota, "key", image) VALUES ('dsgdsg', 'fsdfsdg', 'adsffgsdg', '10.jpg');
+            INSERT INTO video (tieude, mota, "key", image) VALUES ('jhj', 'hgfh', 'gdf', 'hfg');
+            INSERT INTO video (tieude, mota, "key", image) VALUES ('fafsa', 'fafsa', 'fafsa', 'fafsa');
+            INSERT INTO video (tieude, mota, "key", image) VALUES ('fasf', 'fasf', 'fasf', 'fasf');
+            
+      - Xem dữ liệu: Tables -> Chọn bảng -> View/Edit Data -> All Rows  
+-->
